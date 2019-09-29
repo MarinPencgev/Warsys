@@ -33,8 +33,11 @@ namespace Warsys.Web
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<WarsysUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<WarsysDbContext>();
+            services.AddIdentity<WarsysUser, IdentityRole>(options =>
+                    options.SignIn.RequireConfirmedAccount = false) // I set it ot false to avoid email comfirming
+                .AddEntityFrameworkStores<WarsysDbContext>()
+                //.AddDefaultUI(UIFramework.Bootstrap4)
+                .AddDefaultTokenProviders();
 
             services.AddControllersWithViews();
 
