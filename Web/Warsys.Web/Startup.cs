@@ -1,19 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Warsys.Web.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using Warsys.Data;
 using Warsys.Data.Models;
+using System.Data;
+using Warsys.Services;
 
 namespace Warsys.Web
 {
@@ -26,7 +25,6 @@ namespace Warsys.Web
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WarsysDbContext>(options =>
@@ -34,7 +32,7 @@ namespace Warsys.Web
                     Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<WarsysUser, IdentityRole>(options =>
-                    options.SignIn.RequireConfirmedAccount = false) // I set it ot false to avoid email comfirming
+                    options.SignIn.RequireConfirmedAccount = false) 
                 .AddEntityFrameworkStores<WarsysDbContext>()
                 //.AddDefaultUI(UIFramework.Bootstrap4)
                 .AddDefaultTokenProviders();
@@ -55,17 +53,20 @@ namespace Warsys.Web
 
                 options.User.RequireUniqueEmail = true;
             });
+
+            // Application services.
+            services.AddTransient<ISeederService, SeederService>();
+
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //Adding Roles
+            //Adding Roles and seed from excel
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
                 using (var context = serviceScope.ServiceProvider.GetRequiredService<WarsysDbContext>())
                 {
-                    //context.Database.EnsureDeleted();
+                    context.Database.EnsureDeleted();
                     context.Database.EnsureCreated();
 
                     if (!context.Roles.Any())
@@ -96,7 +97,6 @@ namespace Warsys.Web
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();

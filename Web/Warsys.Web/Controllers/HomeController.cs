@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Warsys.Data;
+using Warsys.Services;
 using Warsys.Web.Models;
 
 namespace Warsys.Web.Controllers
@@ -12,14 +14,19 @@ namespace Warsys.Web.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ISeederService _seeder;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ISeederService seeder)
         {
             _logger = logger;
+            _seeder = seeder;
         }
 
         public IActionResult Index()
         {
+            //bool seeded = _seeder.SeedFromExcel(@"C:\Users\Nora\Desktop\Warsys\SeedFile.xlsx");
+            _seeder.SeedTest();
+            //_seeder.SeedFromCsv();
             return View();
         }
 

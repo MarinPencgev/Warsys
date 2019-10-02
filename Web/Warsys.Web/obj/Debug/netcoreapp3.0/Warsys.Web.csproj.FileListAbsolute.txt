@@ -135,8 +135,6 @@ C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\ru\Mi
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Warsys.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Warsys.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
@@ -144,3 +142,10 @@ C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Warsys.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Warsys.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\Warsys.Services.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\Warsys.Services.pdb
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\IronXL.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\ExcelDataReader.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\ExcelDataReader.DataSet.dll

@@ -1,0 +1,210 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Services\\Warsys.Services\\Warsys.Services.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj",
+        "projectName": "Warsys.Data.Models",
+        "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\Nora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data\\Warsys.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data\\Warsys.Data.csproj",
+        "projectName": "Warsys.Data",
+        "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data\\Warsys.Data.csproj",
+        "packagesPath": "C:\\Users\\Nora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Services\\Warsys.Services\\Warsys.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Services\\Warsys.Services\\Warsys.Services.csproj",
+        "projectName": "Warsys.Services",
+        "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Services\\Warsys.Services\\Warsys.Services.csproj",
+        "packagesPath": "C:\\Users\\Nora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Services\\Warsys.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Nora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj"
+              },
+              "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data\\Warsys.Data.csproj": {
+                "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data\\Warsys.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Services.deps.json
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Services.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Services.pdb
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\IronXL.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Data.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Data.Models.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Data.Models.pdb
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Warsys.Data.pdb
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.csprojAssemblyReference.cache
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.AssemblyInfoInputs.cache
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.AssemblyInfo.cs
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.csproj.CopyComplete
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.pdb
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\bin\Debug\netcoreapp3.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Services\Warsys.Services\obj\Debug\netcoreapp3.0\Warsys.Services.csproj.ResolveComReference.cache
