@@ -8,7 +8,5 @@ namespace Warsys.Services
     {
         bool SeedFromExcel(string filePath);   
         bool SeedTest();
-
-        void SeedFromCsv();
     }
 }

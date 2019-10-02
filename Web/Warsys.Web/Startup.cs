@@ -66,7 +66,7 @@ namespace Warsys.Web
             {
                 using (var context = serviceScope.ServiceProvider.GetRequiredService<WarsysDbContext>())
                 {
-                    context.Database.EnsureDeleted();
+                    //context.Database.EnsureDeleted();
                     context.Database.EnsureCreated();
 
                     if (!context.Roles.Any())

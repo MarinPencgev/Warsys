@@ -2150,22 +2150,13 @@
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
           "Warsys.Data": "1.0.0",
-          "Warsys.Data.Models": "1.0.0",
-          "IronXL": "2019.5.2.0"
+          "Warsys.Data.Models": "1.0.0"
         },
         "runtime": {
           "Warsys.Services.dll": {}
         },
         "compile": {
           "Warsys.Services.dll": {}
-        }
-      },
-      "IronXL.Reference/2019.5.2.0": {
-        "runtime": {
-          "IronXL.dll": {
-            "assemblyVersion": "2019.5.2.0",
-            "fileVersion": "2019.5.2.0"
-          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -5021,11 +5012,6 @@
     },
     "Warsys.Services/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "IronXL.Reference/2019.5.2.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

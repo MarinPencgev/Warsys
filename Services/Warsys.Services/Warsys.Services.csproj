@@ -5,17 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <COMReference Include="Microsoft.Office.Excel.dll">
-      <Guid>00020813-0000-0000-c000-000000000046</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>9</VersionMinor>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Lcid>0</Lcid>
-      <Isolated>false</Isolated>
-    </COMReference>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
   </ItemGroup>
@@ -23,12 +12,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\Warsys.Data.Models\Warsys.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\Warsys.Data\Warsys.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="IronXL">
-      <HintPath>..\..\IronXL\IronXL.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
