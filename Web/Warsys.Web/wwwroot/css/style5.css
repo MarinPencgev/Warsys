@@ -7,7 +7,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #ECEBEB;
-    /*fafafa*/
 }
 
 p {
@@ -15,7 +14,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #999;          
 }
 
 a, a:hover, a:focus {
@@ -31,6 +30,7 @@ a, a:hover, a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #db2b36; /*up-navbar background*/
 }
 
 .navbar-btn {
@@ -61,8 +61,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #a9a9a9; /*#7386D5*
-    */
+    background: #db2b36; /*Left pane - body sidebar background*/
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
@@ -75,8 +74,7 @@ a, a:hover, a:focus {
 
     #sidebar .sidebar-header {
         padding: 20px;
-        background: #a9a9a9;
-
+        background: #db2b36; /*Left pane - header sidebar background*/
     }
 
 #sidebar ul.components {
@@ -101,7 +99,7 @@ a, a:hover, a:focus {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #9B9B9B;        /*item name when activ dropdown*/
 }
 
 
@@ -117,10 +115,10 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-ul ul a {
+ul ul a {                                 
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #a9a9a9;           /*Background of listed items*/
 }
 
 ul.CTAs {
@@ -155,7 +153,7 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#content {
+        #content {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
