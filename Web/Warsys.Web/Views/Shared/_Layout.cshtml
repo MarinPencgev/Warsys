@@ -34,12 +34,12 @@
                 <h3>Web Automated Report System</h3>
             </div>
             <ul class="list-unstyled components">
-                <p>Manager</p>
+                <p>MANAGER</p>
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Excise Products</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Excise products</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">GAZOLINE</a>
+                            <a href="/Products/Index">GAZOLINE</a>
                         </li>
                         <li>
                             <a href="#">DIESEL</a>
@@ -63,20 +63,20 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Orders</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Control points</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
-                            <a href="#">Active orders</a>
+                            <a href="#">KT-1 DIESEL (INTAKE)</a>
                         </li>
                         <li>
-                            <a href="#">Completed Orders</a>
+                            <a href="#">KT-10 DIESEL (INTAKE)</a>
                         </li>
                     </ul>
                 </li>
                 @if (this.User.IsInRole("Admin"))
                 {
                     <li>
-                        <a href="/Deliveries/All">Deliveries</a>
+                        <a href="#">Deliveries</a>
                     </li>
                 }
                 <li>

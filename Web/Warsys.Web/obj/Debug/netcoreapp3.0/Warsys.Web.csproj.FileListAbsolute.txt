@@ -148,3 +148,4 @@ C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\Warsy
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\Warsys.Services.pdb
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\ExcelDataReader.dll
 C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\bin\Debug\netcoreapp3.0\ExcelDataReader.DataSet.dll
+C:\Users\Nora\Desktop\Warsys\Warsys\Web\Warsys.Web\obj\Debug\netcoreapp3.0\Razor\Views\Products\Index.cshtml.g.cs
