@@ -56,12 +56,13 @@ namespace Warsys.Web
 
             // Application services.
             services.AddTransient<ISeederService, SeederService>();
+            services.AddTransient<ITransactionsService, TransactionsService>();
 
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //Adding Roles and seed from excel
+            //Adding Roles and FlowDirections 
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
                 using (var context = serviceScope.ServiceProvider.GetRequiredService<WarsysDbContext>())
@@ -83,6 +84,22 @@ namespace Warsys.Web
                         };
                         context.Roles.Add(admin);
                         context.Roles.Add(user);
+
+                        context.SaveChanges();
+                    }
+
+                    if (!context.FlowDirections.Any())
+                    {
+                        var intake = new FlowDirection
+                        {
+                            Direction = "INTAKE"
+                        };
+                        var outflow = new FlowDirection
+                        {
+                            Direction = "OUTFLOW"
+                        };
+                        context.FlowDirections.Add(intake);
+                        context.FlowDirections.Add(outflow);
 
                         context.SaveChanges();
                     }

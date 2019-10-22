@@ -24,7 +24,8 @@ namespace Warsys.Web.Controllers
 
         public IActionResult Index()
         {
-            bool seeded = _seeder.SeedFromExcel(@"C:\Users\Nora\Desktop\Warsys\SeedFile.xlsx");
+            //bool seeding = _seeder.SeedFromExcel(@"C:\Users\Nora\Desktop\Warsys\SeedFile-Products.xlsx");
+            bool seeding = _seeder.SeedFromExcel(@"C:\Users\Nora\Desktop\Warsys\SeedFile-Transactions.xlsx");
 
             return View();
         }

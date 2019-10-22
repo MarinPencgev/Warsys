@@ -13,6 +13,8 @@ namespace Warsys.Data
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<FlowDirection> FlowDirections { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

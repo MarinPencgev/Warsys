@@ -11,5 +11,7 @@ namespace Warsys.Data.Models
 
         public string ProductCode { get; set; }
 
+        public string ExciseCode { get; set; }
+
     }
 }

@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+<head>
+    <link rel="stylesheet" href="/css/styleTabs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <button class="tablink" onclick="openPage('Tab1', this, '#db2b36')">Product overview</button>
+    <button class="tablink" onclick="openPage('Tab2', this, '#db2b36')" id="defaultOpen">Transactions Summary</button>
+    <button class="tablink" onclick="openPage('Tab3', this, '#db2b36')">Intake</button>
+    <button class="tablink" onclick="openPage('Tab4', this, '#db2b36')">Outflow</button>
+    <button class="tablink" onclick="openPage('Tab5', this, '#db2b36')">Balance report</button>
+
+
+    <div id="Tab1" class="tabcontent">
+
+    </div>
+
+    <div id="Tab2" class="tabcontent">
+        <style>
+            table#t01 {
+                width: 100%;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+
+            th {
+                text-align: left;
+            }
+        </style>
+        <table id="t01">
+            <tr><th>Flowmeter</th><th>Transaction</th><th>End date</th><th>Receipt</th><th>DensityAt15</th><th>VolumeAt15</th><th>Mass</th></tr>
+            @foreach (var transaction in  Model)
+            {
+        <tr>
+            <td>@transaction.Flowmeter</td>
+            <td>@transaction.TransactionNumber</td>
+            <td>@transaction.EndDate</td>
+            <td>@transaction.Receipt</td>
+            <td>@transaction.DensityAt15</td>
+            <td>@transaction.VolumeAt15</td>
+            <td>@transaction.Mass</td>
+        </tr>
+            }
+        </table>    
+    </div>
+
+    <div id="Tab3" class="tabcontent">
+
+    </div>
+
+    <div id="Tab4" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+
+    <div id="Tab5" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
