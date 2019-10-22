@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Storage;
 using Warsys.Services;
 using Warsys.Web.Models.ViewModels;
 
@@ -20,7 +21,7 @@ namespace Warsys.Web.Controllers
         [ActionName("Gasoline")]
         public IActionResult Index()
         {
-            var model = _transactionsService.GetAll()
+            var all = _transactionsService.GetAll()
                 .Where(x => x.Product.ExciseCode == "E420")
                 .Select(x => new TransactionsViewModel
                 {
@@ -30,11 +31,30 @@ namespace Warsys.Web.Controllers
                     Receipt = x.Product.Name,
                     DensityAt15 = x.Density15.ToString(),
                     Mass = x.Mass.ToString(),
-                    VolumeAt15 = x.StdVolume.ToString()
+                    VolumeAt15 = x.StdVolume.ToString(),
+                    FlowDirection = x.Direction.Direction.ToString()
                 });
 
+            var byDate = all.Where(x => x.FlowDirection == "OUTPUT")
+                .Select(x => new
+                {
+                    Date = x.EndDate.Substring(0, 10),
+                    Volume15 = decimal.Parse(x.VolumeAt15),
+                    Mass = decimal.Parse(x.Mass),
+                })
+                .GroupBy(x => x.Date)
+                .Select(g => new TransactionsByDateViewModel
+                {
+                    Date = g.Key,
+                    Volume15 = g.Sum(x => x.Volume15).ToString(),
+                    Mass = g.Sum(x => x.Mass).ToString()
+                });
 
-            return this.View(model);
+            var modelsContainer = new List<object>();
+            modelsContainer.Add(all);
+            modelsContainer.Add(byDate);
+
+            return this.View(modelsContainer);
         }
     }
 }

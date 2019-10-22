@@ -20,10 +20,11 @@ namespace Warsys.Services
         public ICollection<Transaction> GetAll()
         {
             var transactions = _context.Transactions
-                .Include(x=>x.Product)
-                .OrderByDescending(x=>x.StopTime)
+                .Include(x => x.Product)
+                .Include(x=>x.Direction)
+                .OrderByDescending(x => x.StopTime)
                 .ToList();
-
+                
             return transactions;
         }
     }

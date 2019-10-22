@@ -21,6 +21,8 @@ namespace Warsys.Web.Models.ViewModels
 
         public string Mass { get; set; }
 
+        public string FlowDirection { get; set; }
+
         
     }
 }
