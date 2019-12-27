@@ -13,7 +13,6 @@ namespace Warsys.Services
     public class SeederService : ISeederService
     {
         private readonly WarsysDbContext _context;
-
         public SeederService(WarsysDbContext context)
         {
             _context = context;
@@ -62,16 +61,18 @@ namespace Warsys.Services
                     {
                         var rowData = row.ItemArray.ToList();
 
+                        //Uncomment for products seeding
                         //var product = new Product
                         //{
-                        //   Name = row[0].ToString(),
-                        //   ProductCode = row[1].ToString(),
-                        //   ExciseCode = row[2].ToString()
+                        //    Name = row[0].ToString(),
+                        //    ProductCode = row[1].ToString(),
+                        //    ExciseCode = row[2].ToString()
                         //};
+                        //products.Add(product);
 
+                        //Uncomment for transactions seeding
                         var direction = _context.FlowDirections.FirstOrDefault(x => x.Direction == row[3].ToString());
                         var productId = _context.Products.FirstOrDefault(x => x.Name == row[4].ToString()).Id;
-
                         var transaction = new Transaction()
                         {
                             Sequence = row[0].ToString(),
@@ -87,10 +88,7 @@ namespace Warsys.Services
                             Density15 = decimal.Parse(row[10].ToString()),
                             Temperature = decimal.Parse(row[11].ToString()),
                         };
-
                         transactions.Add(transaction);
-
-                        //products.Add(product);
                     }
                 }
             }

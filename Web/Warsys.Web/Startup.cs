@@ -96,7 +96,7 @@ namespace Warsys.Web
                         };
                         var outflow = new FlowDirection
                         {
-                            Direction = "OUTFLOW"
+                            Direction = "OUTPUT"
                         };
                         context.FlowDirections.Add(intake);
                         context.FlowDirections.Add(outflow);

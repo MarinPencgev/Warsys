@@ -4,17 +4,16 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="/css/styleTabs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styleTabs.css">
+    <script src="/js/tabs.js"></script>
 </head>
 <body>
-
-    <button class="tablink" onclick="openPage('Tab1', this, '#db2b36')">Product overview</button>
-    <button class="tablink" onclick="openPage('Tab2', this, '#db2b36')" id="defaultOpen">Transactions Summary</button>
-    <button class="tablink" onclick="openPage('Tab3', this, '#db2b36')">Intake</button>
-    <button class="tablink" onclick="openPage('Tab4', this, '#db2b36')">Outflow</button>
-    <button class="tablink" onclick="openPage('Tab5', this, '#db2b36')">Balance report</button>
-
+    <button class="tablink" id="tabButton1">Product overview</button>
+    <button class="tablink" id="tabButton2">Transactions Summary</button>
+    <button class="tablink" id="tabButton3">Intake</button>
+    <button class="tablink" id="tabButton4">Outflow</button>
+    <button class="tablink" id="tabButton5">Balance report</button>
 
     <div id="Tab1" class="tabcontent">
 
@@ -90,32 +89,13 @@
 
     <div id="Tab4" class="tabcontent">
         <h3>About</h3>
-        <p>Who we are and what we do.</p>
+        <p>Bahgo4</p>
     </div>
 
     <div id="Tab5" class="tabcontent">
         <h3>About</h3>
-        <p>Who we are and what we do.</p>
+        <p>Bahgo5</p>
     </div>
-
-    <script>
-        function openPage(pageName, elmnt, color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-            document.getElementById(pageName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
 
 </body>
 </html>

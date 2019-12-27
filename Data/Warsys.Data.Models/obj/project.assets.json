@@ -742,23 +742,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nora\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\norit\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj",
+      "projectUniqueName": "C:\\Users\\norit\\OneDrive\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj",
       "projectName": "Warsys.Data.Models",
-      "projectPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj",
-      "packagesPath": "C:\\Users\\Nora\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nora\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\obj\\",
+      "projectPath": "C:\\Users\\norit\\OneDrive\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\Warsys.Data.Models.csproj",
+      "packagesPath": "C:\\Users\\norit\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\norit\\OneDrive\\Desktop\\Warsys\\Warsys\\Data\\Warsys.Data.Models\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\norit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -797,12 +793,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
